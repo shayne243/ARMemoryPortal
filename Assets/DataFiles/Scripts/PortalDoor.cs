@@ -9,7 +9,10 @@ public class PortalDoor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        foreach (Material mat in PGMat)
+        {
+            mat.SetInt("stest", (int)CompareFunction.Equal);
+        }
     }
 
     // Update is called once per frame
